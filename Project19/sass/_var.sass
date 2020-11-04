@@ -1,0 +1,15 @@
+$accentColor: #e74c3c
+$mainFont: 'Myriad Pro', sans-serif
+$font1: 'Quicksand', sans-serif
+$font2: 'Rokkit', sans-serif
+$width: 960px
+
+@function rem($px)
+	$result: $px / 16px + 0rem
+	@return $result
+=trs($value)
+	-webkit-transition: $value
+	-moz-transition: $value 
+	-ms-transition: $value
+	-o-transition: $value
+	transition: $value

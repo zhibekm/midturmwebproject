@@ -1,0 +1,77 @@
+.header
+	position: relative
+	background: url(../img/header_bg.jpg) 0 0 no-repeat
+	background-size: cover
+	height: 500px
+	padding-top: 58px
+	text-align: center
+.header__logo
+	float: left
+.logo__link
+	font-stretch: condensed
+	text-decoration: none
+	text-transform: uppercase
+	color: #fff
+	font-size: rem(20px)
+.header__nav
+	float: right
+ul
+	margin: 0
+	padding: 0
+ul li
+	margin-right: 33px
+	list-style-type: none
+	display: inline-block
+ul li .nav__link
+	font-stretch: condensed
+	text-decoration: none
+	text-transform: uppercase
+	color: #fff
+	font-size: rem(19px)
+	+trs(color .5s linear)
+ul li .nav__link:hover
+	color: $accentColor
+	text-decoration: underline
+.header__txt-box
+	padding-top: 159px
+.txt-box__heading
+	font-family: $font2
+	margin-bottom: 24px
+	margin-top: 0
+	color: #fff
+	font-size: rem(59px)
+.txt-box__border
+	margin: 0 auto
+	display: block
+	border-bottom: 1px solid #fff
+	width: percentage(700px / $width)
+.txt-box__txt
+	font-family: $font1
+	font-size: rem(22px)
+	color: #fff
+.header__link
+	position: absolute
+	bottom: 0
+	left: 50%
+	transform: translate(-50%, 50%)
+.link__link
+	font-family: $font2
+	line-height: 45px
+	text-decoration: none
+	text-transform: uppercase
+	color: #fff
+	background: $accentColor
+	width: 206px
+	height: 45px
+	display: inline-block
+	position: relative
+	font-size: rem(24px)
+.link__link:before
+	content: ''
+	display: inline-block
+	border: 6px solid rgba(231, 76, 60,.5)
+	width: 206px
+	height: 45px
+	position: absolute
+	top: -6px
+	left: -6px

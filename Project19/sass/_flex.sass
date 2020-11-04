@@ -1,0 +1,80 @@
+.flex__flex-box
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+.flex-box__pic-link
+	position: relative
+	overflow: hidden
+.pic-link__img
+	display: inline-block
+	margin-bottom: 55px
+	position: relative
+.flex-box__pic-link:before
+	content: ''
+	background: rgba(255, 255, 255,.5)
+	display: inline-block
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 3
+.pic-link__txt
+	font-family: $font2
+	display: none
+	padding: 23px 20px
+	position: absolute
+	bottom: 61px
+	left: 0
+	width: 100%
+	height: 90px
+	background: $accentColor
+	font-size: rem(30px)
+	text-decoration: none
+	color: #fff
+.pic-link__txt span
+	display: block
+	font-size: rem(15px)
+	color: #9d3b31
+.pic-link__zoom
+	background: $accentColor
+	text-align: center
+	line-height: 43px
+	position: absolute
+	top: 20px
+	right: 20px
+	display: none
+	width: 38px
+	height: 38px
+.pic-link__zoom:before
+	content: ''
+	display: inline-block
+	border: 6px solid rgba(231, 76, 60,.5)
+	width: 38px
+	height: 38px
+	position: absolute
+	top: -6px
+	right: -6px
+.flex-box__pic-link:hover:before
+	display: none
+.flex-box__pic-link:hover .pic-link__txt, .flex-box__pic-link:hover .pic-link__zoom
+	display: inline-block
+.info-block__link
+	margin-top: 40px
+	text-align: center
+	height: 70px
+.link__btn
+	font-family: $font2
+	padding: 23px 52px 23px 28px
+	background: $accentColor
+	position: relative
+	text-decoration: none
+	text-transform: uppercase
+	color: #fff
+	font-size: rem(24px)
+.link__btn span
+	position: absolute
+	top: 23px
+	right: 15px
+.info-block__form
+	text-align: center
