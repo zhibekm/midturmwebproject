@@ -1,0 +1,57 @@
+.fact
+	color: #fff
+	padding: 70px 5% 
+	position: relative
+	background: url(../img/photo7.jpg) 0 0 no-repeat fixed
+	background-size: cover
+	&::after
+		content: ""
+		display: inline-block
+		width: 100%
+		height: 100%
+		background: #000
+		opacity: .7
+		position: absolute
+		top: 0
+		left: 0
+.fact__block
+	margin-top: 50px
+	display: flex
+	justify-content: space-between
+	+tablet
+		flex-wrap: wrap
+.fact__item
+	background: rgba(0,0,0,.5)
+	box-sizing: border-box
+	padding-top: 47px
+	width: 22%
+	height: 237px
+	text-align: center
+	transition: .5s
+	&:hover
+		transform: translateY(-10px)
+	+tablet
+		width: 48%
+	+phone
+		width: 100%
+.fact__txt
+	font-size: rem(32px)
+	margin: 0
+.colored
+	color: $color
+	margin-top: 16px
+.span
+	position: relative
+	font-size: rem(32px)
+.bb
+	margin: 0
+	width: 32px
+	position: absolute
+	left: 50%
+	transform: translateX(-50%)
+.mb
+	+tablet
+		margin-bottom: 30px
+.mb2
+	+phone
+		margin-bottom: 30px

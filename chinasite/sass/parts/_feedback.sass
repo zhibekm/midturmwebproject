@@ -1,0 +1,62 @@
+.feedback
+	position: relative
+	padding: 70px 5%
+	background: url(../img/photo8.jpg) 0 0 no-repeat fixed
+	background-size: cover
+	&::after
+		content: ""
+		display: inline-block
+		width: 100%
+		height: 100%
+		background: #000
+		opacity: .7
+		position: absolute
+		top: 0
+		left: 0
+.feedback__heading
+	color: #fff
+	text-align: center
+	font-size: rem(32px)
+	margin-bottom: 10px
+.feedback__txt
+	color: #fff
+	text-align: center
+	font-size: rem(18px)
+.form__box
+	text-align: center
+.form__row
+	position: relative
+.user
+	border-radius: 9px
+	border: solid 2px $color
+	color: #000
+	width: 70%
+	padding: 12px
+	margin-bottom: 10px
+	outline: none
+.user__label
+	position: absolute
+	top: 15px
+	left: 25%
+	transform: translateX(-70%)
+.form__submit
+	display: block
+	margin: 0 auto
+	border: none
+	padding: 15px 20px
+	border-radius: 9px
+	background: $color
+	outline: none
+	&:active
+		background-color: $color
+		box-shadow: 0 1px 1px rgba(255,255,255,.5), inset 0 2px 5px rgba(0,0,100,.5)
+.textarea
+	width: 70%
+	margin-bottom: 20px
+	padding: 12px
+	color: #000
+	outline: none
+	border-radius: 9px
+	border: solid 2px $color
+input[type=number]::-webkit-inner-spin-button 
+	-webkit-appearance: none

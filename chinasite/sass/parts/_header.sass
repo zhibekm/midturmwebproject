@@ -1,0 +1,127 @@
+.header
+	background: $color
+	z-index: 50
+	position: fixed
+	top: 0 
+	left: 0
+	width: 100%
+	-webkit-clip-path: polygon(50% 0%, 100% 0, 100% 75%, 70% 100%, 30% 100%, 0 75%, 0 0)
+	clip-path: polygon(50% 0%, 100% 0, 100% 75%, 70% 100%, 30% 100%, 0 75%, 0 0)
+.nav__menu
+	padding: 0
+	margin: 0
+	+tablet
+		margin-top: 20px
+.header__block
+	display: flex
+	justify-content: space-around
+	align-items: center
+	padding: 20px 0 30px 0
+	+tablet
+		display: block
+.header__logo
+	display: flex
+	justify-content: space-around
+	font-size: rem(27px)
+	+tablet
+		text-align: center
+.arrow_img
+	width: 40px
+	height: 40px
+	transform: rotate(45deg)
+	margin-right: 10px
+	margin-top: 5px
+	+phone
+		display: none
+.header__menu
+	transition: all .5s
+	+tablet
+		display: none
+		clear: both
+		width: 100%
+.dn
+	display: none
+	+tablet
+		display: inline-block
+		font-size: rem(32px)
+		list-style: none
+.logo__link
+	display: flex
+	align-items: center
+	font-weight: bold
+	color: #fff
+	transition: .5s
+	&:hover
+		color: #000
+.menu__list
+	position: relative
+	display: inline-block
+	font-size: rem(14px)
+	text-transform: uppercase
+	list-style: none
+	padding: 0 10px
+	+tablet
+		padding: 20px 0
+		text-align: center
+		display: block
+		margin: 0 30px
+.list__link
+	font-weight: bold
+	color: #fff
+	transition: .5s
+	&:hover
+		color: #000
+	+tablet
+		border-bottom: 2px solid #fff
+		padding: 20px
+.port__lang
+	color: #000
+	font-weight: bold
+	display: none
+	position: absolute
+	top: -20px
+	left: 40px
+	padding: 20px
+	background: #fff
+.display:hover .port__lang
+	display: inline-block
+.display
+	+tablet
+		display: none
+.bn
+	+tablet
+		border-bottom: none
+.activeb 
+	display: block
++tablet
+	.hamburger
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+		width: 50px
+		height: 50px
+		padding: 6px 10px
+		cursor: pointer
+		z-index: 999
+	.hamburger__line
+		background: #fff
+		width: 100%
+		height: 2px
+		transition: .1s
+	.active 
+		.hamburger__line 							
+			background-color: #fff
+			&:nth-child(1)
+				transform-origin: 0 100%
+				transform: rotate(45deg) translate(4px, -3px)
+			&:nth-child(2)
+				opacity: 0
+			&:nth-child(3)
+				transform-origin: 0% 100%
+				transform: rotate(-45deg) translate(7px, 3px)
++desktop
+	.header__menu
+		display: block
++tablet
+	.header__menu
+		display: none

@@ -1,0 +1,96 @@
+.course
+	position: relative
+	background: url(../img/photo3.jpg) 0 0 no-repeat fixed
+	background-size: cover
+	padding: 70px 5%
+	&::after
+		content: ""
+		display: inline-block
+		width: 100%
+		height: 100%
+		background: #000
+		opacity: .5
+		position: absolute
+		top: 0
+		left: 0
+.course__heading
+	font-size: rem(32px)
+	text-align: center
+	color: #fff
+.course__txt
+	font-size: rem(18px)
+	text-align: center
+	color: #fff
+.course__link
+	color: $color
+	padding: 0 10px
+.course__block
+	margin-top: 2rem
+	display: flex
+	justify-content: space-between
+	+tablet
+		flex-direction: column
+.course__item
+	width: 100%
+	+tablet
+		margin-top: 20px
+		width: 100%
+.course__img
+	background: url(../img/photo4.jpg) 0 -150px no-repeat
+	background-size: cover
+	height: 400px
+	+laptop
+		background-position: 0 0
+.course__info
+	background: $color
+	padding: 4% 4% 80px 4%
+.bar__link
+	color: #000
+.info__bar
+	overflow: hidden
+.fr
+	float: right
+.info__link
+	position: relative
+	display: inline-block
+	color: #fff
+	padding: 20px
+	border-radius: 9px
+	background: $color2
+	&:active
+		background-color: $color2
+		box-shadow: 0 1px 1px rgba(255,255,255,.5), inset 0 2px 5px rgba(0,0,100,.5)
+.program__block
+	padding: 50px 50px 20px 50px
+	background: $color
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+.program__hg
+	color: #000
+	margin: 0 0 30px 0
+.program__item
+	background: #fff
+	position: relative
+	transition: .5s
+	border-radius: 9px
+	border: 1px solid #50a6bd
+	border-top: 10px solid #50a6bd
+	padding: 20px 20px 40px 20px
+	width: 48%
+	text-align: center
+	margin-bottom: 30px
+	cursor: pointer
+	box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.75)
+	&:hover
+		transform: translateY(2px)
+		box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.75)
+	+laptop
+		width: 48%
+	+tablet
+		width: 100%
+.program__link
+	background: $color
+	padding: 20px
+	color: #fff
+	border-radius: 9px
